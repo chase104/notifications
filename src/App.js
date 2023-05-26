@@ -6,6 +6,7 @@ import Messages from './components/messages';
 import Footer from './components/footer';
 import {useEffect} from 'react'
 import axios from 'axios'
+
 function App() {
 
 
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" onClick={() => console.log(process.env.REACT_APP_KEY)}>
         <Navbar />
         <div className="dashboard">
             <Sidebar />
